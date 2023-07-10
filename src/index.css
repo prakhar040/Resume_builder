@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  padding: 50px 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  background-color: rgb(238, 252, 255);
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.heading {
+  margin: 0 auto;
+  max-width: 500px;
+  color: #000;
+  font-size: 3.1rem;
+  line-height: 4.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.heading span {
+  background-clip: text;
+  background-image: linear-gradient(to right, #239ce2, #1369b9);
+  color: transparent;
+}
+
+.right img {
+  width: 400px;
+}
+
+
+.container1{
+  display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+input:hover {
+  border: 1px solid #adadad;
+}
+
+input:focus {
+  border: 1px solid #239ce2;
+}
+
+.container2{
+  min-width: 550px;
+  min-height: 450px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding-top: 5px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.head2{
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.head2::-webkit-scrollbar {
+  height: 7px;
+}
+
+.head2::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #c7c7c7;
+}
+
+.head2 .section {
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.head2 .active {
+  border-bottom: 2px solid #239ce2;
+  color: #239ce2;
+}
+
+.body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 0;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail .row {
+  display: flex;
+  gap: 20px;
+}
+.detail .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detail .row > div {
+  flex: 1;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.chips .new {
+  color: #239ce2;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.chip {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #808080;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.chip p {
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+}
+
+.chips .active {
+  background-color: #239ce2;
+}
+
+.body button {
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #239ce2;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.body button:active {
+  transform: translateY(2px);
+}
+
+.container3{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 0;
+}
+
+.head3{
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colors {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.colors .color {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #239ce2;
+}
+.colors .active {
+  border: 2px solid #000;
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #239ce2;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  margin-left: 80%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main1{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.container4{
+  --color: #239ce2;
+  min-width: 700px;
+  max-width: 850px;
+  margin: 0 auto;
+  flex: 1.2;
+  height: fit-content;
+  min-height: 900px;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.head4{
+  display: flex;
+  flex-direction: column;
+}
+
+.head4 .heading4{
+  font-size: 2.7rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.head4 .subHeading{
+  color: var(--color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.head4 .links{
+  margin-top: 15px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.head4 .link{
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.main3{
+  display: flex;
+  gap: 30px;
+}
+
+.col1 {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.col2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section1 .sectionTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.section1 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.section1 .content .item {
+  border-bottom: 1px dotted lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 10px;
+}
+.section1 .content .item:last-child {
+  border-bottom: none;
+}
+
+.content .title {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.content .subTitle {
+  font-weight: bold;
+  color: var(--color);
+  font-size: 1rem;
+}
+
+.content .overview {
+  font-size: 0.875rem;
+}
+
+.content .link {
+  display: flex;
+  gap: 5px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--color);
+}
+
+.content .date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.content .points,
+.numbered {
+  padding-left: 18px;
+  font-size: 0.875rem;
+}
+
+.numbered li {
+  list-style-type: decimal;
+}
+
+.hidden {
+  display: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
